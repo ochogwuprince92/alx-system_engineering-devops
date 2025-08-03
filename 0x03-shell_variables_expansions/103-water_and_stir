@@ -1,2 +1,2 @@
 #!/bin/bash
-tr 'waterstir0123456789' '012344012bescthohlc' <<< $(( $(tr 'waterstir' 012344012 <<< "$WATER") + $(tr 'waterstir' 012344012 <<< "$STIR") ))
+tr 0123456789 bestcholhc <<< $(( $(echo "$WATER" | tr water 01234) + $(echo "$STIR" | tr stir 01234) ))
